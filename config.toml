@@ -54,12 +54,12 @@ expire_days = 2
 
 # Hero Area Section
 [Languages.en.params.hero]
-enable  = false
+enable  = true
 heading = "We love to make brands grow"
 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-button  = true
+button  = false
 btnText = "Know More"
-btnURL  = "https://themefisher.com/"
+btnURL  = "/about"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
@@ -71,14 +71,14 @@ description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae de
 
 # Blog Section On Homepage
 [Languages.en.params.blog]
-enable  = false
+enable  = true
 topTitle= "OUR UNTOLD STORY"
 title   = "Blog."
 subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
 
 # Contact Section
 [Languages.en.params.contact]
-enable  = false
+enable  = true
 topTitle= "DROP US A NOTE"
 title   = "Contact Us."
 subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
@@ -96,7 +96,7 @@ mapMarker   = "images/marker.png"
 
 # Call to Action Section on About Page
 [Languages.en.params.cta]
-enable  = false
+enable  = true
 bg      = "images/call-to-action/call-to-action-bg-2.jpg"
 title   = "Let's Create Something Together"
 subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
@@ -111,14 +111,14 @@ btnText = "Contact Us"
 name    = "about"
 url     = "about"
 weight  = 2
-[[menu.nav]]
-name    = "service"
-url     = "service"
-weight  = 3
-[[menu.nav]]
-name    = "portfolio"
-url     = "portfolio"
-weight  = 4
+#[[menu.nav]]
+#name    = "service"
+#url     = "service"
+#weight  = 3
+#[[menu.nav]]
+#name    = "portfolio"
+#url     = "portfolio"
+#weight  = 4
 [[menu.nav]]
 name    = "blog"
 url     = "blog"
