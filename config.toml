@@ -78,7 +78,7 @@ subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reici
 
 # Contact Section
 [Languages.en.params.contact]
-enable  = true
+enable  = false
 topTitle= "DROP US A NOTE"
 title   = "Contact Us."
 subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
@@ -123,10 +123,10 @@ weight  = 2
 name    = "blog"
 url     = "blog"
 weight  = 5
-[[menu.nav]]
-name    = "contact"
-url     = "contact"
-weight  = 6
+#[[menu.nav]]
+#name    = "contact"
+#url     = "contact"
+#weight  = 6
 
 # Footer Service Menu
 [[menu.service]]
