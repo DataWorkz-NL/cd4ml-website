@@ -1,45 +1,26 @@
 enable  : true
-topTitle: TEAM MEMBER
+topTitle: The CD4ML experts
 title   : Our Team.
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+subtitle: Our most experienced CD4ML experts
 
 member  :
-  - image         : images/team/member-1.jpg
-    name          : Shawshank Redemption
-    designation   : Head Of Marketing
+  - image         : images/team/maarten_overview.jpeg
+    name          : Maarten
+    designation   : Data & AI Architect / Lead Data Scientist / Trainer
     description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+      Experienced CD4ML Machine Learning engineer, certified Azure architect and trainer.
+    linkedInURL   : https://www.linkedin.com/in/maartenvanduren/
 
-  - image         : images/team/member-2.jpg
-    name          : Leo Departure
-    designation   : Web Developer
+  - image         : images/team/laurens_overview.jpeg
+    name          : Laurens
+    designation   : Machine Learning engineer
     description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+      Experienced CD4ML Machine Learning engineer.
+    linkedInURL   : https://www.linkedin.com/in/laurensk/
 
-  - image         : images/team/member-3.jpg
-    name          : Remoni Rio
-    designation   : Senior Developer
+  - image         : images/team/olaf_overview.jpeg
+    name          : Olaf
+    designation   : Data Scientist
     description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
-
-  - image         : images/team/member-4.jpg
-    name          : Lawandeski Roma
-    designation   : Designer
-    description   : >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
-    facebookURL   : https://www.facebook.com/
-    twitterURL    : https://twitter.com/
-    gplusURL      : https://plus.google.com/
-    dribbbleURL   : https://dribbble.com/
+      Data Scientist
+    linkedInURL   : https://www.linkedin.com/in/olaf-de-leeuw/
