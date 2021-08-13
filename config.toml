@@ -72,9 +72,9 @@ description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae de
 # Blog Section On Homepage
 [Languages.en.params.blog]
 enable  = true
-topTitle= "OUR UNTOLD STORY"
+topTitle= "OUR CD4ML STORIES"
 title   = "Blog."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+subtitle= "Blogs about CD4ML topics that took our attention. Written by us or found across the internet."
 
 # Contact Section
 [Languages.en.params.contact]
