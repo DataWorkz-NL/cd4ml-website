@@ -8,12 +8,13 @@ description: "Best practices with Azure Machine Learning"
 
 ### CD4ML: Ability to reproduce
 
-####Introduction
+#### Introduction
 
 Barry is a data scientist working for a small data science and engineer consulting company based in Utrecht. So far in his career, he has developed tons of state-of-the-art machine learning products. Barry is used to working with large data dumps on his local machine.
 Barry is on holiday and, as borders are closed, decides to pick up a personal challenge; analysis of large quantities of Twitter messages to predict the current mood of tweeters. Barry’s girlfriend is a great data engineer, who is charged with the responsibility of incoming data. For the first time in his career, Barry is handed the great opportunity to work in the cloud. His girlfriend sets up the following scenario in Azure:
 
-####Scenario setup in Azure
+![azure-setup](static/images/blog/azure-setup.jpg)
+
 Barry and his girlfriend decide to use a well-known concept from software engineering, CI/CD, in their project architecture. Because Barry is going to build a Machine Learning model, he will face some challenges while working according this concept.
 In this article we will talk about Continuous Integration / Continuous Deployment for Machine Learning projects, or CD4ML. An important aspect of CD4ML is versioning and by that we mean both model versioning, and data versioning.
 Model versioning
@@ -26,7 +27,7 @@ An excellent tool for model versioning is MLFlow. It can be used as a standalone
 
 At ProRail, the organization responsible for managing the railroad network in The Netherlands, the image recognition team uses MLFlow and AzureML much like Barry. Trained models are put in a model repository which brings all the benefits described above. With those benefits, ProRail saves a lot of time and resources that comes with managing predictive models and instead spend that time and those resources on more valuable things. One of those things is a custom integration with Azure Databricks, enabling data scientists to monitor model training more closely. This enabled them to develop even better models and have more control over fine tuning the models to the specific needs of the use case. Ultimately, this results in data scientists spending more time and energy into developing and enhancing the model itself, resulting in more value to ProRail in less time.
 
-####Data versioning
+#### Data versioning
 Let’s see how Azure might help Barry. Barry starts exploring the Twitter data using Azure Notebooks. As the retrieval service was only just spun up, Barry is slightly disappointed with the quantity of data available in Blob storage. As the week progresses, Barry develops his first model, predicting Twitter’s mood based on the topics of the day before. Just before the weekend, Barry ran his model and got his first performance measure. Happy with the result, Barry sets his mind to activities to something even more fun than data science.
 On Monday morning, Barry has a coffee and starts refreshing his memory. Reminding himself of his great success on Friday, he struggles through his Azure Notebook and manages to rerun the exact same code he ran last Friday. Astonishingly for Barry, the Notebook result is overwritten by a totally different model performance, despite not changing any code or model variables!
 Oh no! What has happened?
@@ -37,7 +38,7 @@ The example above demonstrates how a changing data source, which is a very commo
 We will focus on how to add data files to file storage as described in Barry’s example, but other types of version changes of a data set could be the insertion or the updating of a row in a database.
 The main reasons for data versioning are to increase reproducibility and to reduce various kinds of unexpected behavior.
 
-#####Datasets, Experiments, Runs, and Logs
+##### Datasets, Experiments, Runs, and Logs
 Azure Machine Learning can connect to a data set, for example a specific path on a Blob storage. When a file is added to this path, it is automatically available to the data scientist working with Azure Machine Learning.
 
 When Barry executes a cloud training job, he actually starts an Experiment, in which various Runs of a model can be executed. He could, for example, start an Experiment called “Twitter classification” and execute multiple training jobs with different model settings (hyper parameters) in parallel, as different Runs. Each Run results in a prediction of the Twitter Mood with its performance measures.
@@ -60,12 +61,12 @@ The following steps can be easily implemented in any model training script. Beca
 
 This algorithm ensures that subsequent runs always use the data files of the first run so we can enjoy reproducible and comparable results!
 
-######Data versioning of files in Azure Machine Learning
+###### Data versioning of files in Azure Machine Learning
 Always keep in mind to keep your data source connections safe and maintainable, whether you are using managed connections such as Datasets and Datastores or other types of connections. Despite being a highly managed service, Azure Machine Learning allows customization of the resources used underneath, opening up several networking and authorization options. This might even allow you to go as far as meeting your corporate security regulations, which are not often aimed at (public) cloud environments.
 
 Want to know more about the security aspect of Azure Machine Learning? Stay tuned for the next episodes of CD4ML!
 
-####CI/CD & Model building
+#### CI/CD & Model building
 In this section we’ll discuss the well-known concept amongst developers of CI/CD (Continuous Integration, Continuous Deployment). The main purpose behind this idea is to bring your code -, your application to your end users faster: Instead of packaging application features in huge release packages, every feature should be able to be deployed directly after it has been built. That way you have less (error prone) code changes, you get fast feedback about the success of your feature, and of course have a fast Return of Investment (ROI). It provides reliable software by covering automation, testing, and quality checks. The concept is widely used in all kinds of software development teams.
 
 With the rise of Machine Learning new challenges have popped up. As a development team, Barry and his girlfriend are not only dealing with changes in code, but Barry’s ML models can change as well and data used in those models (see above). Data scientists like Barry are continuously working on better models, trying to get that accuracy a bit higher for instance. Barry might experiment with hyperparameters or add new features. Once he discovered that new features are needed the input data might change too.
@@ -78,5 +79,5 @@ The deployment of the developed models must be automated: Without automated depl
 
 At ProRail, trained models are stored in a model repository. Next thing the image recognition team did was build a custom integration with Azure Databricks, enabling data scientists to deploy models from Databricks with a single push of a button. That deployment pipeline runs in Azure DevOps. There, the model itself and accompanying software are put through some final automated tests and checks to make sure the final machine learning application is guaranteed to work as expected and the deployment succeeds. Ultimately, this results in more stable and reliable applications, that can be deployed in way less time and effort. Which in turn enables updates to be developed and deployed much faster and thus delivering value to the business much faster.
 
-####Conclusion
+#### Conclusion
 A few weeks into the project, Barry already reached his goal. He put his trained models in a model repository, versioned his training data, and used CI/CD pipelines to deploy his models and application. That enabled him to have more fine-grained control over the model developing process, the ability to reproduce, and deploy tested and stable machine learning applications automatically. Ultimately saving time and resources, while delivering a more valuable result at the same time.

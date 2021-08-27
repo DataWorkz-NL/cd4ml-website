@@ -1,0 +1,31 @@
+enable  : true
+title: "Upcoming events"
+subtitle: "Events with CD4ML related topics"
+item    :
+  - mainUpcoming : true
+    image : images/events/upcoming_event.png
+    title : ODSC WEST RECONNECT
+    eventDate: 16-18 November 2021
+    url: https://odsc.com/california/
+    subtitle: conference and expo
+    description : ODSC West will be more inclusive than ever — from in-person sessions to digital experiences available to everyone, from anywhere. Get ready for the first-ever hybrid ODSC. Combining small immersive in-person sessions and hands-on training with innovative and insightful virtual ones — it’s going to be one fantastic event to reconnect, all done with your safety in mind.
+      
+  - mainUpcoming : false
+    title : Event 1
+    eventDate: 1 December 2021
+    url: http://cd4ml.com
+
+  - mainUpcoming : false
+    title : Event 2
+    eventDate: 1 December 2021
+    url: http://cd4ml.com
+
+  - mainUpcoming : false
+    title : Event 2
+    eventDate: 1 December 2021
+    url: http://cd4ml.com
+
+  - mainUpcoming : false
+    title : Event 2
+    eventDate: 1 December 2021
+    url: http://cd4ml.com

@@ -1,0 +1,50 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.events }}
+    {{ if .enable }}
+        {{ "<!-- Events Section Start -->" | safeHTML }}
+        <section class="events section" id="events">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title text-center">
+                            {{ with .title }}<h2>{{ . }}</h2><span class="border"></span>{{ end }}
+                            {{ with .subtitle }}<p>{{ . }}</p>{{ end }}
+                        </div>
+                    </div>
+                </div>
+                {{ range .item }}
+                {{ if .mainUpcoming }}
+                    <div class="row mb-50 justify-content-center">
+                        <div class="col-md-5 col-sm-12 text-center offset-md-1">
+                            <img src="{{ .image | relURL }}" class="img-fluid rounded shadow" alt="about-image">
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <div class="content">
+                                <a href>{{ .url }}</a>
+                                <h6>{{ .eventDate }}</h6>
+                                <h2>{{ .title }}</h2>
+                                <h6>{{ .subtitle}}</h6>
+                                <p>{{ .description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {{ else }}
+                    <div class="row mt-1 justify-content-center">
+                        <div class="col-md-5 col-md-5 col-sm-12 offset-xs-1">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col"><h6>{{ .title }}</h6></div>
+                                    <div class="col"><p>{{ .eventDate }}</p></div>
+                                    <div class="col"><a href>{{ .url }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            {{ end }}
+            </div>
+        </section>
+        {{"<!-- Events section End -->" | safeHTML}}
+    {{ end }}
+{{ end }}
