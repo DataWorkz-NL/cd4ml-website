@@ -6,26 +6,25 @@ item    :
     image : images/events/upcoming_event.png
     title : ODSC WEST RECONNECT
     eventDate: 16-18 November 2021
-    url: https://odsc.com/california/
+    eventLocation: San Francisco
+    eventUrl: https://odsc.com/california/
     subtitle: conference and expo
     description : ODSC West will be more inclusive than ever — from in-person sessions to digital experiences available to everyone, from anywhere. Get ready for the first-ever hybrid ODSC. Combining small immersive in-person sessions and hands-on training with innovative and insightful virtual ones — it’s going to be one fantastic event to reconnect, all done with your safety in mind.
       
   - mainUpcoming : false
-    title : Event 1
-    eventDate: 1 December 2021
-    url: http://cd4ml.com
+    title : GLOBAL ARTIFICIAL INTELLIGENCE VIRTUAL CONFERENCE
+    eventDate: 11-13 October 2021
+    eventLocation: Santa Clara, US
+    eventUrl: http://www.globalbigdataconference.com/santa-clara/global-artificial-intelligence-virtual-conference/event-127.html
+  
+  - mainUpcoming : false
+    title : WORLD SUMMIT AI
+    eventDate: 13-14 October
+    eventLocation: Amsterdam
+    eventUrl: https://worldsummit.ai/
 
   - mainUpcoming : false
-    title : Event 2
-    eventDate: 1 December 2021
-    url: http://cd4ml.com
-
-  - mainUpcoming : false
-    title : Event 2
-    eventDate: 1 December 2021
-    url: http://cd4ml.com
-
-  - mainUpcoming : false
-    title : Event 2
-    eventDate: 1 December 2021
-    url: http://cd4ml.com
+    title : CODEMOTION
+    eventDate: November 30, 1-2 December 2021
+    eventLocation: Amsterdam
+    eventUrl: https://events.codemotion.com/conferences/online/2021/online-tech-conference-autumn
