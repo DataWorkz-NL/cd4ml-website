@@ -727,6 +727,18 @@ a:focus, a:hover {
   z-index: -1;
 }
 
+.tf-lightbulb:before {
+  content: "\e030";
+}
+
+.tf-ion-code:before {
+  content: "\f271";
+}
+
+.tf-compass:before {
+  content: "\e053";
+}
+
 /*=================================================================
   About us section
 ==================================================================*/
