@@ -33,11 +33,12 @@
                     <div class="row mt-1">
                         <div class="col">
                             <div class="content">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6"><h6>{{ .title }}</h6></div>
-                                    <div class="col-md-3 col-sm-6"><p>{{ .eventDate }}</p></div>
-                                    <div class="col-md-3 col-sm-6"><p>{{ .eventLocation }}</p></div>
-                                    <div class="col-md-12 col-sm-12"><a href>{{ .eventUrl }}</a>
+                                <div class="row mt-5" style="background-color:rgb(240, 240, 240);">
+                                    <div class="service-icon text-center"><i class="{{ .icon }}"></i></div>
+                                    <div class="col-md-5 col-sm-5"><h6>{{ .title }}</h6></div>
+                                    <div class="col-md-3 col-sm-6"><h6>{{ .eventDate }}</h6></div>
+                                    <div class="col-md-3 col-sm-6"><h6>{{ .eventLocation }}</h6></div>
+                                    <div class="col-md-12 col-sm-12" style="text-align: right"><a href>{{ .eventUrl }}</a>
                                     </div>
                                 </div>
                             </div>

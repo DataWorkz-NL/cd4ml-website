@@ -727,6 +727,14 @@ a:focus, a:hover {
   z-index: -1;
 }
 
+.tf-ion-calendar:before {
+  content: "\f117";
+}
+
+.tf-calendar2:before {
+  content: "\e00d";
+}
+
 .tf-lightbulb:before {
   content: "\e030";
 }
