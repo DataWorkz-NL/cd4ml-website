@@ -76,6 +76,21 @@ topTitle= "OUR CD4ML STORIES"
 title   = "Blog."
 subtitle= "Blogs about CD4ML topics that took our attention. Written by us or found across the internet."
 
+# Code Section
+[Languages.en.params.code]
+enable  = true
+title   = "Code examples"
+
+# Experiences Section
+[Languages.en.params.experiences]
+enable  = true
+title   = "CD4ML experiences"
+
+# Tools Section
+[Languages.en.params.tools]
+enable  = true
+title   = "CD4ML tools"
+
 # Contact Section
 [Languages.en.params.contact]
 enable  = false

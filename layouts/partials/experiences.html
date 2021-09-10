@@ -1,0 +1,13 @@
+{{ if .Site.Params.experiences.enable }}
+{{ "<!-- Start Experiences -->" | safeHTML }}
+<section class="experiences section">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				{{ with .Site.Params.experiences.title }}<h2>{{ . }}</h2>{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+{{ "<!-- Start Experiences -->" | safeHTML }}
+{{ end }}
