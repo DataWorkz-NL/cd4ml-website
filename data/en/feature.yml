@@ -2,15 +2,18 @@ enable  : true
 item  :
   - icon  : tf-ion-code
     title : Code
+    link: code
     description : >
       Find code snippets for several CD4ML related solutions.
 
   - icon  : tf-lightbulb
     title : Experiences
+    link: experiences
     description : >
       Experiences shared by other developers.
 
   - icon  : tf-compass
     title : Tools
+    link: tools
     description : >
       Read about the latest tools that will help you to build the most efficient pipelines.
