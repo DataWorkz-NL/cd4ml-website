@@ -80,16 +80,19 @@ subtitle= "Blogs about CD4ML topics that took our attention. Written by us or fo
 [Languages.en.params.code]
 enable  = true
 title   = "Code examples"
+subtitle= "Let's reuse code snippets from experienced CD4ML developers"
 
 # Experiences Section
 [Languages.en.params.experiences]
 enable  = true
 title   = "CD4ML experiences"
+subtitle= "Experiences from people around the world working with ML models in production"
 
 # Tools Section
 [Languages.en.params.tools]
 enable  = true
 title   = "CD4ML tools"
+subtitle= "Reviews"
 
 # Contact Section
 [Languages.en.params.contact]

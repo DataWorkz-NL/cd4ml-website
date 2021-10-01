@@ -377,6 +377,10 @@ a:focus, a:hover {
   background: #f9f9f9;
 }
 
+.bg-blue {
+  background: #1f2532;
+}
+
 .color-gray {
   color: #777;
 }
@@ -817,6 +821,36 @@ a:focus, a:hover {
     display: none;
   }
 }
+
+/*=================================================================
+  Feature section
+==================================================================*/
+.feature .feature-block {
+  padding: 30px 20px;
+}
+
+.feature .feature-block .feature-icon {
+  margin-bottom: 15px;
+}
+
+.feature .feature-block i {
+  font-size: 40px;
+  color: #f0326b;
+  background: linear-gradient(100deg, #f9643d, #fe2a77);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature .feature-block h3 {
+  color: #333;
+  font-size: 18px;
+}
+
+.feature .feature-block p {
+  color: #777;
+}
+
 
 /*=================================================================
  Call To Action 1

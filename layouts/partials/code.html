@@ -1,13 +1,16 @@
 {{ if .Site.Params.code.enable }}
-{{ "<!-- Start Call To Action -->" | safeHTML }}
-<section class="code-snippet section">
+{{ "<!-- Start Code -->" | safeHTML }}
+<section class="code section bg-gray" id="code">
     <div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				{{ with .Site.Params.code.title }}<h2>{{ . }}</h2>{{ end }}
-			</div>
-		</div>
-	</div>
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with .Site.Params.code.title }}<h2>{{.}}</h2>{{ end }}
+                    {{ with .Site.Params.code.subtitle }}<p>{{.}}</p>{{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-{{ "<!-- Start Call To Action -->" | safeHTML }}
+{{ "<!-- Start Code -->" | safeHTML }}
 {{ end }}
