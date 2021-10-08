@@ -2,6 +2,21 @@
 
 {{ partial "feature.html" . }}
 
-{{ partial "tools.html" . }}
+{{ if .Site.Params.tools.enable }}
+{{ "<!-- Start Tools Section -->" | safeHTML }}
+<section class="tools section bg-gray" id="tools">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with .Site.Params.tools.title }}<h2>{{.}}</h2>{{ end }}
+                    {{ with .Site.Params.tools.subtitle }}<p>{{.}}</p>{{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- End Tools -->" | safeHTML }}
+{{ end }}
 
 {{ end }}
