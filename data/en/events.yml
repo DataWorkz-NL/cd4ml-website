@@ -3,7 +3,7 @@ title: "Upcoming events"
 subtitle: "Events with CD4ML related topics"
 item    :
   - mainUpcoming : true
-    image : images/events/upcoming_event.png
+    image : images/events/webcast.png
     icon: tf-ion-calendar
     title : Where to start? Continuous Delivery for Machine Learning
     eventDate: 7 October 2021
