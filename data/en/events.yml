@@ -1,6 +1,6 @@
 enable  : true
 title: "Upcoming events"
-subtitle: "Events with CD4ML related topics"
+subtitle: "Conferences, webinars and podcast with CD4ML related topics"
 item    :
   - mainUpcoming : true
     image : images/events/webcast.png
