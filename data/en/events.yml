@@ -1,0 +1,44 @@
+enable  : true
+title: "Upcoming events"
+subtitle: "Conferences, webinars and podcast with CD4ML related topics"
+item    :
+  - mainUpcoming : true
+    image : images/events/webcast.png
+    icon: tf-ion-calendar
+    title : Where to start? Continuous Delivery for Machine Learning
+    eventDate: 7 October 2021
+    eventLocation: Webcast
+    eventUrl: https://whitepapers.theregister.com/paper/view/13182/where-to-start-continuous-delivery-for-machine-learning
+    subtitle: Face the challenges of real-world ML systems with the MCubed webcast Ep2
+    description : As machine learning components make their way into more and more applications, teams are faced with the challenge of transforming the traditional Continuous Delivery process for an environment that often deals with not one but three types of change. Application code, machine learning models, and training data all evolve and need to be carefully considered when coming up with a catch-all workflow.
+      
+  - mainUpcoming : false
+    icon: tf-ion-calendar
+    title : GLOBAL ARTIFICIAL INTELLIGENCE VIRTUAL CONFERENCE
+    eventDate: 11-13 October 2021
+    eventLocation: Santa Clara, US
+    eventUrl: http://www.globalbigdataconference.com/santa-clara/global-artificial-intelligence-virtual-conference/event-127.html
+  
+  - mainUpcoming : false
+    icon: tf-ion-calendar
+    title : WORLD SUMMIT AI
+    eventDate: 13-14 October
+    eventLocation: Amsterdam
+    eventUrl: https://worldsummit.ai/
+  
+  - mainUpcoming : false
+    image : images/events/upcoming_event.png
+    icon: tf-ion-calendar
+    title : ODSC WEST RECONNECT
+    eventDate: 16-18 November 2021
+    eventLocation: San Francisco
+    eventUrl: https://odsc.com/california/
+    subtitle: conference and expo
+    description : ODSC West will be more inclusive than ever — from in-person sessions to digital experiences available to everyone, from anywhere. Get ready for the first-ever hybrid ODSC. Combining small immersive in-person sessions and hands-on training with innovative and insightful virtual ones — it’s going to be one fantastic event to reconnect, all done with your safety in mind.
+
+  - mainUpcoming : false
+    icon: tf-ion-calendar
+    title : CODEMOTION
+    eventDate: November 30, 1-2 December 2021
+    eventLocation: Amsterdam
+    eventUrl: https://events.codemotion.com/conferences/online/2021/online-tech-conference-autumn

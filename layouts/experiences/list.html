@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ partial "feature.html" . }}
+
+{{ if .Site.Params.experiences.enable }}
+{{ "<!-- Start Experiences -->" | safeHTML }}
+<section class="experiences section bg-gray" id="experiences">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with .Site.Params.experiences.title }}<h2>{{.}}</h2>{{ end }}
+                    {{ with .Site.Params.experiences.subtitle }}<p>{{.}}</p>{{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- End Experiences -->" | safeHTML }}
+{{ end }}
+
+
+{{ end }}

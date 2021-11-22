@@ -1,15 +1,27 @@
 {{ define "main" }}
 
-<section class="page-404 text-center d-flex align-items-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>CD 4 ML</h1>
-                <h2>Something nice is coming!</h2>
-                <p>We are just not there yet...</p>
-            </div>
-        </div>
-    </div>
-</section>
+  {{ partial "hero.html" . }}
+
+  {{ partial "about-sm.html" . }}
+
+  {{ partial "feature.html" . }}
+
+  {{ partial "events.html" . }}
+
+  {{ partial "about.html" . }}
+
+  {{ partial "workingprocess.html" . }}
+
+  {{ partial "portfolio.html" . }}
+
+  {{ partial "team.html" . }}
+
+  {{ partial "pricing.html" . }}
+
+  {{ partial "testimonial.html" . }}
+
+  {{ partial "blog.html" . }}
+
+  {{ partial "contact.html" . }}
 
 {{ end }}

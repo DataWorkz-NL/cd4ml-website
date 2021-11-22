@@ -1,0 +1,25 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.feature }}
+    {{ if .enable }}
+    {{ "<!-- Feature Section Start -->" | safeHTML }}
+    <section class="feature bg-blue" id="feature">
+        <div class="container">
+            <div class="row">
+                {{ range .item }}
+                    {{ "<!-- Single Feature Item -->" | safeHTML }}
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="feature-block color-bg text-center">
+                            <div class="feature-icon text-center">
+                                <i class="{{ .icon }}"></i>
+                            </div>
+                            <a href="{{ .link }}" style="color:#f9f9f9;">{{ .title }}</a>
+                        </div>
+                    </div>
+                    {{ "<!-- End Single Feature Item -->" | safeHTML }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ "<!-- End Feature section -->" | safeHTML }}
+    {{ end }}
+{{ end }}

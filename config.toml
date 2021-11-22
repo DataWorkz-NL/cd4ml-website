@@ -57,9 +57,9 @@ expire_days = 2
 enable  = false
 heading = "We love to make brands grow"
 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-button  = true
+button  = false
 btnText = "Know More"
-btnURL  = "https://themefisher.com/"
+btnURL  = "/about"
 videoThumb = "images/slider/video-player-thumb.jpg"
 videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
@@ -71,35 +71,47 @@ description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae de
 
 # Blog Section On Homepage
 [Languages.en.params.blog]
-enable  = false
-topTitle= "OUR UNTOLD STORY"
+enable  = true
+topTitle= "OUR CD4ML STORIES"
 title   = "Blog."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+subtitle= "Blogs about CD4ML topics that took our attention. Written by us or found across the internet."
+
+# Code Section
+[Languages.en.params.code]
+enable  = true
+title   = "Code examples"
+subtitle= "Let's reuse code snippets from experienced CD4ML developers"
+
+# Experiences Section
+[Languages.en.params.experiences]
+enable  = true
+title   = "CD4ML experiences"
+subtitle= "Experiences from people around the world working with ML models in production"
+
+# Tools Section
+[Languages.en.params.tools]
+enable  = true
+title   = "CD4ML tools"
+subtitle= "Reviews"
 
 # Contact Section
 [Languages.en.params.contact]
-enable  = false
+enable  = true
 topTitle= "DROP US A NOTE"
 title   = "Contact Us."
-subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-address = "14/05, Stockhome <br> Victori Palace , United States"
-phone   = "(03) 9283 2617"
-fax     = "+61 3827 3590"
-facebook= "https://www.facebook.com/"
-twitter = "https://twitter.com/"
-linkedin= "https://www.linkedin.com/"
-dribbble= "https://dribbble.com/"
-instagram= "https://www.instagram.com/"
-mapLatitude = "51.507351"
-mapLongitude= "-0.127758"
+subtitle= "Visit our company website or follow us on LinkedIn"
+address = "Tractieweg 41 studio N, 3534 AP Utrecht"
+linkedin= "https://www.linkedin.com/company/dataworkz"
+mapLatitude = "52.105691"
+mapLongitude= "5.080117"
 mapMarker   = "images/marker.png"
 
 # Call to Action Section on About Page
 [Languages.en.params.cta]
-enable  = false
+enable  = true
 bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-title   = "Let's Create Something Together"
-subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+title   = "Let's discover CDM4L together"
+subtitle= "Join us in our search for best practices, tools and experiences about CD4ML..."
 btnText = "Contact Us"
 
 # We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
@@ -111,22 +123,22 @@ btnText = "Contact Us"
 name    = "about"
 url     = "about"
 weight  = 2
-[[menu.nav]]
-name    = "service"
-url     = "service"
-weight  = 3
-[[menu.nav]]
-name    = "portfolio"
-url     = "portfolio"
-weight  = 4
+#[[menu.nav]]
+#name    = "service"
+#url     = "service"
+#weight  = 3
+#[[menu.nav]]
+#name    = "portfolio"
+#url     = "portfolio"
+#weight  = 4
 [[menu.nav]]
 name    = "blog"
 url     = "blog"
 weight  = 5
-[[menu.nav]]
-name    = "contact"
-url     = "contact"
-weight  = 6
+#[[menu.nav]]
+#name    = "contact"
+#url     = "contact"
+#weight  = 6
 
 # Footer Service Menu
 [[menu.service]]
